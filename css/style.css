@@ -1,0 +1,101 @@
+/******************************************
+/* HOT GARBAGE - PLEASE DON'T MIMIC THIS CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: rgba(255, 99, 71, 0.248);
+  color: rgb(57, 57, 57);
+
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+section {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.6rem;
+}
+
+main {
+  width: 60%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+img {
+  display: block;
+  height: 300px;
+  margin: 0 auto;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+li {
+  text-align: center;
+  list-style: none;
+  font-size: 1.6rem;
+  border: solid;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#random,
+#reset {
+  grid-column: 1/-1;
+}
+
+li[id*="red"]:hover {
+  background-color: rgba(255, 0, 0, 0.487);
+  color: white;
+}
+
+li[id*="green"]:hover {
+  background-color: rgba(0, 128, 0, 0.494);
+
+  color: white;
+
+}
+
+li[id*="blue"]:hover {
+  background-color: rgba(0, 0, 255, 0.476);
+  color: white;
+}
+
+#random:hover,
+#reset:hover {
+  background-color: rgba(255, 71, 234, 0.356);
+}
+
+
+#color_box {
+  width: max(150px, 35%);
+  border-radius: 50%;
+  border: 1px solid gray;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.522);
+  aspect-ratio: 1 / 1;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
