@@ -1,5 +1,5 @@
 ## Description
-An app to mix color or generate random ones using RGB.
+An app to mix color or generate random ones using RGB format.
 
 [Try the Live demo!](https://l-meryem.github.io/rgb-mixer/)
 
